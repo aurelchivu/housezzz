@@ -1,6 +1,14 @@
 {
   "presets": [
-    "next/babel"
+    [
+      "next/babel",
+      {
+        "preset-env": {
+          "loose": true,
+          "modules": false
+        }
+      }
+    ]
   ],
   "plugins": [
     "babel-plugin-transform-typescript-metadata",
