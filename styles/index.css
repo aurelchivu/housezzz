@@ -15,7 +15,7 @@
 /* Generics */
 
 body {
-  background-color: rgba(17, 24, 39);
+  background-color: rgb(31 41 55);
 }
 
 input {
@@ -27,4 +27,8 @@ input {
 
 .marker-active {
   z-index: 1;
+}
+
+main {
+  min-height: 85vh;
 }

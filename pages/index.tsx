@@ -2,5 +2,5 @@ import React from "react";
 import Layout from "src/components/Layout";
 
 export default function Home() {
-  return <Layout main={<div>Homeeee</div>} />;
+  return <div>Home Screen</div>;
 }
