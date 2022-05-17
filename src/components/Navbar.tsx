@@ -1,23 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
 import { FunctionComponent, ReactNode } from "react";
 import Link from "next/link";
+import Image from "next/Image";
 
-interface IProps {
+interface NProps {
   authenticated: boolean;
   logout: () => void;
 }
 
-const Navbar: FunctionComponent<IProps> = ({ authenticated, logout }) => {
+const Navbar: FunctionComponent<NProps> = ({ authenticated, logout }) => {
   return (
-    <nav className="bg-gray-700 py-1">
-      <div className="px-6 flex items-center justify-between h-16">
+    <nav className="bg-emerald-700 py-1">
+      <div className="px-5 flex items-center justify-between h-16">
         <Link href="/">
           <a>
-            <img
-              src="/home-color.svg"
-              alt="home house"
-              className="inline w-6"
-            />
+            <Image src="/home-color.svg" width={24} height={24} alt="" />
           </a>
         </Link>
         {authenticated ? (

@@ -1,6 +1,14 @@
-import React from "react";
-import Layout from "src/components/Layout";
+import React, { useEffect } from "react";
+import Head from "next/head";
 
 export default function Home() {
-  return <div>Home Screen</div>;
+  return (
+    <>
+      <Head>
+        <title>Housezzz | Home</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div>Home Screen</div>
+    </>
+  );
 }
