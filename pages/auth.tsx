@@ -1,3 +1,5 @@
+import FirebaseAuth from "src/components/FirebaseAuth";
+
 export default function Auth() {
-  return <div>Auth</div>;
+  return <FirebaseAuth />;
 }

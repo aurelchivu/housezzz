@@ -14,7 +14,7 @@ const Navbar: FunctionComponent<NProps> = ({ authenticated, logout }) => {
       <div className="px-5 flex items-center justify-between h-16">
         <Link href="/">
           <a>
-            <Image src="/home-color.svg" width={24} height={24} alt="" />
+            <img src="/home-color.svg" width={24} height={24} alt="" />
           </a>
         </Link>
         {authenticated ? (
