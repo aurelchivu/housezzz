@@ -43,14 +43,18 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
 
   useEffect(() => {
     const cancelAuthListener = auth.onIdTokenChanged(async (user) => {
-      if (user) {
-        console.log(user);
-        const token = await user.getIdToken();
-        setTokenCookie(token);
-        setUser(user);
-      } else {
-        removeTokenCookie();
-        setUser(null);
+      try {
+        if (user) {
+          console.log(user);
+          const token = await user.getIdToken();
+          setTokenCookie(token);
+          setUser(user);
+        } else {
+          removeTokenCookie();
+          setUser(null);
+        }
+      } catch (error) {
+        console.log(error.message);
       }
     });
 

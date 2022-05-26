@@ -26,9 +26,9 @@ const FirebaseAuth: FunctionComponent = () => {
 
   return (
     <div className="mt-16">
-      {renderAuth ? (
+      {renderAuth && (
         <StyledFirebaseAuth uiConfig={firebaseAuthConfig} firebaseAuth={auth} />
-      ) : null}
+      )}
     </div>
   );
 };
