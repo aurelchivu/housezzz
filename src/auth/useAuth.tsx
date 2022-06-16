@@ -61,7 +61,7 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
     return () => {
       cancelAuthListener();
     };
-  }, []);
+  }, [auth]);
 
   return (
     <AuthContext.Provider value={{ user, logout, authenticated: !!user }}>
