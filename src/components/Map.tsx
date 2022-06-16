@@ -21,7 +21,7 @@ const Maps = ({}: IProps) => {
     <div className="text-black relative">
       <Map
         {...viewport}
-        style={{ width: "100%", height: "80vh" }}
+        style={{ width: "100%", height: "85vh" }}
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN}
         mapStyle="mapbox://styles/mapbox/dark-v10"
         onMove={(evt) => setViewport(evt.viewState)}
